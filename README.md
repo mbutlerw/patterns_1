@@ -1,7 +1,7 @@
 # Concretes and Abstracts
 
-> Separate Out the Things That Change from Those That Stay the Same
-> Russ Olsen, Design Patterns in Ruby
+> Separate Out the Things That Change from Those That Stay the Same 
+> – Russ Olsen, Design Patterns in Ruby
 
 This is a workshop to introduce you to the idea of separating things out that stay the same.
 
@@ -23,7 +23,7 @@ So I can avoid typos
 I want to raise an error if I input an unrecognised type
 ```
 
-Given that users will interact with the program via `irb`, your job is to implement the following features:
+Given that users will interact with the program via `irb`, your job is to implement the following features. **Implement them first in `/terrible`, then in `/great`, and compare the experiences of developing in each.**
 
 ```
 As a user
