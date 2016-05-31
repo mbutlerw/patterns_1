@@ -11,16 +11,20 @@ class Converter
 
   def convert(type)
     raise "Unrecognised type" unless known_parser?(type)
-    PARSERS[type].new(string).convert  
+    parser_of_type(type).convert  
   end
 
   private
-  
+
   attr_reader :string
 
   PARSERS = { text: TextParser, html: HtmlParser, json: JsonParser, xml: XmlParser }.freeze
 
   def known_parser?(type)
     PARSERS.include?(type)
+  end
+
+  def parser_of_type(type)
+    PARSERS[type].new(string)
   end
 end
