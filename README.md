@@ -9,6 +9,20 @@ This is a workshop to introduce you to the idea of separating things out that st
 
 There are two projects here: both print out a string in a variety of different ways. One of them is written well, using good Object-Oriented Programming and following the principle above. One of them is written poorly, using poor OOP and ignoring the principle above.
 
+Both programs use the same user interface. The following user story **have already been implemented for you**:
+
+```
+As a user
+So I can read in any environment
+I want to convert strings to different output types (text, html, json, and xml)
+```
+
+```
+As a user
+So I can avoid typos
+I want to raise an error if I input an unrecognised type
+```
+
 Given that users will interact with the program via `irb`, your job is to implement the following features:
 
 ```
