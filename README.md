@@ -7,9 +7,9 @@ This is a workshop to introduce you to the idea of separating things out that st
 
 ### Instructions
 
-There are two projects here: both print out a string in a variety of different ways. One of them is written well, using good Object-Oriented Programming and following the principle above. One of them is written poorly, using poor OOP and ignoring the principle above.
+There are two projects here: both print out a string in a variety of different ways. One of them (`/great`) is written well, following the principle above. One of them (`/terrible`) is written poorly, ignoring the principle above.
 
-Both programs use the same user interface. The following user story **have already been implemented for you**:
+Both programs use the same user interface. The following user stories **have already been implemented for you**:
 
 ```
 As a user
