@@ -7,7 +7,7 @@ class Converter
 
   def convert(type,uppercase = false)
      @string = @string.upcase if uppercase
-     @string = @string.gsub(/&\w*&/, '****') if @string.count('&')
+     @string = @string.gsub(/&\w*&/, '****') if @string.count('&') == 2
     if type == :text
       @string
     elsif type == :html
