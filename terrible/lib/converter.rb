@@ -5,7 +5,9 @@ class Converter
     @string = string
   end
 
-  def convert(type)
+  def convert(type,uppercase = false)
+     @string = @string.upcase if uppercase
+     @string = @string.gsub(/&\w*&/, '****') if @string.count('&')
     if type == :text
       @string
     elsif type == :html
@@ -13,9 +15,9 @@ class Converter
     elsif type == :json
       { response: @string }.to_json
     elsif type == :xml
-      "<response>#{ @string }</response>"  
+      "<response>#{ @string }</response>"
     else
       raise "Unrecognised type"
-    end      
+    end
   end
 end
